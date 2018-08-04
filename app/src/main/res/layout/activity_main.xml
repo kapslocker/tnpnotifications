@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/main_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/radioGroup"
+            android:layout_marginBottom="20sp"
+            android:text="Choose notification channel to register for:"
+            android:id="@+id/topview"/>
+        <RadioGroup
+            android:layout_above="@id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:orientation="vertical"
+            android:layout_marginBottom="20sp">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/training"
+                android:id="@+id/trainingButton"/>
+            <RadioButton
+                android:id="@+id/placementButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/placement"/>
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:onClick="register"
+            android:id="@+id/registerButton"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello there!"
+            android:id="@+id/messageView"
+            android:visibility="invisible"
+            android:layout_below="@id/registerButton"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit Notifications"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:onClick="openNotifications"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

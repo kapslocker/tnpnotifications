@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "966390364794",
+    "firebase_url": "https://tnp-notifications-4af66.firebaseio.com",
+    "project_id": "tnp-notifications-4af66",
+    "storage_bucket": "tnp-notifications-4af66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966390364794:android:0732a3535eea6e38",
+        "android_client_info": {
+          "package_name": "com.example.kapil.tnpnotifications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966390364794-lk8evpfs0t26c4n66j42eua96trif5ev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa8WMIIP2JnNSgeXCIeDJCd5UgwlLkULg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
